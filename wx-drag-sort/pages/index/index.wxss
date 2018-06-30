@@ -1,0 +1,32 @@
+.container {
+  height: 2000rpx;
+  width: 100%;
+}
+
+movable-area {
+  background-color: orange;
+  width: 100%;
+  height: 2000rpx;
+}
+
+.m1 {
+  background-color: green;
+  width: 100%;
+  height: 500rpx;
+  /* z-index: 3; */
+}
+
+.m2 {
+  background-color: red;
+  width: 100%;
+  height: 200rpx;
+  /* top: 200rpx; */
+  /* z-index: 4; */
+}
+
+.m3 {
+  background-color: blue;
+  width: 100%;
+  height: 300rpx;
+  /* top: 400rpx; */
+}

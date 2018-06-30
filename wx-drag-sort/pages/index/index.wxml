@@ -1,0 +1,22 @@
+<!-- <view class='container'>
+  <movable-area>
+    <movable-view class='m1' direction='vertical' bindchange='move' catchtouchstart='touchstart' catchtouchend='touchend' y='{{ y1 }}'>
+    </movable-view>
+    <movable-view class='m2' direction='vertical' y='{{ y2 }}' out-of-bounds='true' bindlongpress='longpress' disabled='{{ canMove }}' catchtouchmove='touchmove'>
+    </movable-view>
+    <movable-view class='m3' direction='vertical' bindtap='change'>
+    </movable-view>
+  </movable-area>
+  <!-- <view class='view' catchtouchmove='touchmove' style='top: {{ y }}rpx; left: {{ x }}rpx; background-color: orange;'></view> -->
+<!-- </view> -->
+
+<view class='container'>
+	<movable-area>
+		<movable-view class='m1' direction='vertical' y='{{ top1 / 2 }}' catchtouchend='touchend' out-of-bounds='true' bindchange='change' damping='40' catchtouchstart='touchstart' style='z-index: {{ dragged == 1 ? 100 : 0 }};'>
+		</movable-view>
+		<movable-view class='m2' direction='vertical' y='{{ top2 / 2 }}' damping='40' out-of-bounds='true' catchtouchend='touchend2' bindchange='change2' catchtouchstart='touchstart2' style='z-index: {{ dragged == 2 ? 100 : 0 }};'>
+		</movable-view>
+		<movable-view class='m3' direction='vertical' y='{{ top3 / 2 }}' damping='40' out-of-bounds='true' catchtouchstart='touchstart3' catchtouchend='touchend3' bindchange='change3' style='z-index: {{ dragged == 3 ? 100 : 0 }};'>
+		</movable-view>
+	</movable-area>
+</view>
